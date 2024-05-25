@@ -159,7 +159,6 @@ const aw20216s_led_t PROGMEM g_aw20216s_leds[AW20216S_LED_COUNT] = {
     {1, SW10_CS16, SW10_CS17, SW10_CS18},  // 123 SLED20
 
     {1, SW10_CS1, SW10_CS2, SW10_CS3},     // 124 LOGO
-    {1, SW8_CS10, SW8_CS11, SW8_CS12},     // 125 INDICATOR
 };
 
 led_config_t g_led_config = {
@@ -194,7 +193,7 @@ led_config_t g_led_config = {
     },
     {
         // Keyboard RGB Matrix
-        4,    4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,       8,
+        4,    4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
         4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
         4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
         4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,    4,          4, 4, 4,
@@ -203,6 +202,8 @@ led_config_t g_led_config = {
         // Underglow light
         2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
         2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        // Logo 
+        8,
     }
 };
 #endif // RGB_MATRIX_ENABLE
